@@ -18,7 +18,6 @@ writingTheiOSApp:
     iOSOverview: Fetching the Announcements
     iosModel: Model
     iosJsonToModel: Json to Model
-    appTransportSecurity: App Transport Security
     networkingCode: Networking code
     detailViewController: Detail View Controller
 version2:

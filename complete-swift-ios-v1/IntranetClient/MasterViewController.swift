@@ -22,7 +22,7 @@ class MasterViewController: UITableViewController, AnnouncementsFetcherDelegate 
         self.clearsSelectionOnViewWillAppear = self.splitViewController!.isCollapsed
         super.viewWillAppear(animated)
         self.registerNotifications()
-        self.fetchAnnouncements()
+        self.fetchAnnouncements() // <1>
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -83,7 +83,7 @@ class MasterViewController: UITableViewController, AnnouncementsFetcherDelegate 
         self.setNetworkActivityIndicator(false)
     }
     
-    func announcementsFetched(_ announcements: [Announcement]) {
+    func announcementsFetched(_ announcements: [Announcement]) {  // <2>
         self.setNetworkActivityIndicator(false)
         
         self.tableViewDataSource.announcements = announcements

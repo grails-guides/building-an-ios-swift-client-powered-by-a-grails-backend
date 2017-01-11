@@ -1,11 +1,11 @@
-When the user taps an announcement, a _NSNotification_ is posted which contains
+When the user taps an announcement, a _Notification_ is posted which contains
 the tapped announcement. In the method _prepareForSegue:sender_ of _MasterViewController_
 we set the announcement property of _DetailViewController_
 
-[source,objectivec]
-./complete-objectivec-ios-v1/IntranetClient/MasterViewController.m
+[source,swift]
+./complete-swift-ios-v1/IntranetClient/MasterViewController.swift
 ----
-include::{sourcedir}/../complete-objectivec-ios-v1/IntranetClient/MasterViewController.m[lines="61..71"]
+include::{sourcedir}/../complete-swift-ios-v1/IntranetClient/MasterViewController.swift[lines="69..77"]
 ----
 
 image::segue.jpeg[]
@@ -17,14 +17,8 @@ image::connect_detail_iboutlets.png[]
 
 This is the complete _DetailViewController_ code. There is no networking code involved.
 
-[source,objectivec]
-./complete-objectivec-ios-v1/IntranetClient/DetailViewController.h
+[source,swift]
+./complete-swift-ios-v1/IntranetClient/DetailViewController.swift
 ----
-include::{sourcedir}/../complete-objectivec-ios-v1/IntranetClient/DetailViewController.h[]
-----
-
-[source,objectivec]
-./complete-objectivec-ios-v1/IntranetClient/DetailViewController.m
-----
-include::{sourcedir}/../complete-objectivec-ios-v1/IntranetClient/DetailViewController.m[]
+include::{sourcedir}/../complete-swift-ios-v1/IntranetClient/DetailViewController.swift[]
 ----
