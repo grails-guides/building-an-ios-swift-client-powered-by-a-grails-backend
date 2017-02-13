@@ -15,7 +15,7 @@ writingTheGrailsApp:
   runningTheApp: Running the Application
 writingTheiOSApp:
     title: Writing the iOS Application
-    iOSOverview: Fetching the Announcements
+    ios-overview: Fetching the Announcements
     iosModel: Model
     iosJsonToModel: Json to Model
     networkingCode: Networking code
