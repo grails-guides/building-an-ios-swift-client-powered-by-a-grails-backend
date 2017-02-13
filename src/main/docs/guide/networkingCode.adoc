@@ -7,10 +7,11 @@ We use _NSURLSession_ to connect to the Grails API. Several constants are set in
 include::{sourcedir}/../complete-swift-ios-v1/IntranetClient/GrailsApi.swift[]
 ----
 
-<1> Grails App server url. Please note you may need to change the ip address to match your local machine.
+<1> Grails App server url. 
 <2> The path we configured in the Grails app in _UrlMappings.groovy_
 <3> The version of the API
 
+NOTE: You may need to change the ip address to match your local machine.
 
 [source,swift]
 ./complete-swift-ios-v1/IntranetClient/AnnouncementsFetcher.swift

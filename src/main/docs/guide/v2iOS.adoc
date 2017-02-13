@@ -14,7 +14,7 @@ key) in the _DetailViewController_. We have changed the _prepareForSegue:sender_
 in _MasterViewController_ as illustrated below:
 
 [source,swift]
-./complete-swift-ios-v1/IntranetClient/MasterViewController.swift
+./complete-swift-ios-v2/IntranetClient/MasterViewController.swift
 ----
 include::{sourcedir}/../complete-swift-ios-v2/IntranetClient/MasterViewController.swift[lines="69..78"]
 ----
@@ -24,7 +24,7 @@ include::{sourcedir}/../complete-swift-ios-v2/IntranetClient/MasterViewControlle
 _DetailViewController_ asks the server for a complete announcement; body included.
 
 [source,swift]
-./complete-swift-ios-v1/IntranetClient/DetailViewController.swift
+./complete-swift-ios-v2/IntranetClient/DetailViewController.swift
 ----
 include::{sourcedir}/../complete-swift-ios-v2/IntranetClient/DetailViewController.swift[]
 ----
@@ -32,7 +32,7 @@ include::{sourcedir}/../complete-swift-ios-v2/IntranetClient/DetailViewControlle
 It uses a new fetcher:
 
 [source,swift]
-./complete-swift-ios-v1/IntranetClient/AnnouncementFetcher.swift
+./complete-swift-ios-v2/IntranetClient/AnnouncementFetcher.swift
 ----
 include::{sourcedir}/../complete-swift-ios-v2/IntranetClient/AnnouncementFetcher.swift[]
 ----
@@ -40,7 +40,7 @@ include::{sourcedir}/../complete-swift-ios-v2/IntranetClient/AnnouncementFetcher
 We added a method to the builder to convert nework data to a single Announcement object
 
 [source,swift]
-./complete-swift-ios-v1/IntranetClient/AnnouncementBuilder.m
+./complete-swift-ios-v2/IntranetClient/AnnouncementBuilder.m
 ----
 include::{sourcedir}/../complete-swift-ios-v2/IntranetClient/AnnouncementBuilder.swift[lines="24..37"]
 ----
@@ -48,7 +48,7 @@ include::{sourcedir}/../complete-swift-ios-v2/IntranetClient/AnnouncementBuilder
 And a delegate protocol to indicate if the announcement has been fetched
 
 [source,swift]
-./complete-swift-ios-v1/IntranetClient/AnnouncementFetcherDelegate.swift
+./complete-swift-ios-v2/IntranetClient/AnnouncementFetcherDelegate.swift
 ----
 include::{sourcedir}/../complete-swift-ios-v2/IntranetClient/AnnouncementFetcherDelegate.swift[]
 ----
